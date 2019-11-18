@@ -56,3 +56,5 @@ Database detail
             views
             duration
         
+This is databse detail of our project
+Make sure that the tables and fields name must same otherwise you need to change in all places
