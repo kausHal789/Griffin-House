@@ -2,9 +2,9 @@
 A youtube clone
 
 Database detail
-    📌 Database nam
-      griffin
-    📌 Tables name
+    Database name
+        griffin
+    Tables name
         1️⃣ categories
             id
             name
