@@ -2,8 +2,8 @@
 A youtube clone
 
 Database detail
-    📌 Database name
-        griffin
+    📌 Database nam
+      griffin
     📌 Tables name
         1️⃣ categories
             id
