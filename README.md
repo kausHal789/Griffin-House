@@ -91,5 +91,5 @@ A youtube clone
         </ul>
         
 This is databse detail of our project.
-Some tables have <b>created_at</b> field and it's default value is CURRUNT_TIMESTAMP.
+Some tables have <b>created_at</b> field and it's default value is <b>CURRUNT_TIMESTAMP</b>.
 Make sure that the tables and fields name must same otherwise you have to refactor each and every querys and other statements.
