@@ -1,8 +1,8 @@
 # Griffin-House
 A youtube clone
 
-Database detail
-    📌 Database name<br>
+<h3>Database detail</h3>
+    <h5>📌 Database name</h5>
         griffin
     Tables name
         1️⃣ categories
