@@ -1,0 +1,19 @@
+.signUpContainer .column .signupForm form {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.signUpContainer .column form input[type="text"], input[type="email"], input[type="password"] {
+    border: none;
+    border-bottom: 1px solid#dedede;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.error {
+    color: #f00;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
