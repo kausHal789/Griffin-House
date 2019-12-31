@@ -4,10 +4,18 @@ A youtube clone
 <h3>Database detail</h3>
     <h5>📌 Database name</h5>
         griffin
-    Tables name
-        1️⃣ categories
-            id
-            name
+    <h4>Tables name</h4>
+        <ul>
+            <li>
+                1️⃣ categories            
+                <ul>
+                    <li>id</li>
+                    <li>name</li>
+                </ul>
+            </li>
+            <li></li>
+            <li></li>
+        </ul>
         2️⃣ comments
             id
             posted_by
