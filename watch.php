@@ -20,6 +20,7 @@ $video = new Video($cn, $_GET['v'], $user);
 if($video->getUsername() !== $user->getUsername()) {
     $video->incrementViews();
 }
+
 ?>
 
 <div class="leftVideoColumn">

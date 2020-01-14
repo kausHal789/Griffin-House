@@ -52,11 +52,14 @@ class Comment {
                     <div class='commentBody'>
                         $body
                     </div>
+
                 </div>
+
             </div>
             $commentControls
             $viewRepliesText
             </div>";
+
     }
 
     private function getTimestamp($datetime, $full = false) {
@@ -190,7 +193,7 @@ class Comment {
             $query->execute();
     
             return 1;
-            // echo "remove dislike";
+            // "remove dislike";
         } else {
             // not dislike
 
@@ -207,7 +210,7 @@ class Comment {
             $query->execute();
 
             return -1 - $count;
-            // echo "dislike insert";
+            // "dislike insert";
         }
     }
 

@@ -50,7 +50,7 @@ class Video {
             );
 
             return json_encode($result);
-            // "remove like";
+            // echo "remove like";
         } else {
             // not like
 
@@ -72,7 +72,7 @@ class Video {
             );
 
             return json_encode($result);
-            // "like insert";
+            // echo "like insert";
         }
     }
 

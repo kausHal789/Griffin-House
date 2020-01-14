@@ -31,6 +31,8 @@ if(isset($_POST['saveButton'])) {
         $_POST['privacyInput'],
         $user->getUsername() 
     );
+    // var_dump($_POST['privacyInput']);
+    
     $videoProcessor = new VideoProcessor($cn);
     if($videoProcessor->updateVideoData($videoData, $videoId))
         echo "<script>alert('Video details Update Successfully');</script>";

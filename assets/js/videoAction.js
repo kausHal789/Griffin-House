@@ -1,6 +1,9 @@
 function likeVideo(btn, videoId) {
+    // alert("like");
     $.post("ajax/likeVideo.php", {videoId: videoId})
     .done(function (data) {
+        // alert(data);      
+
         var likeButton = $(btn);
         var dislikeButton = $(btn).siblings(".dislikeButton");
 
@@ -23,7 +26,7 @@ function likeVideo(btn, videoId) {
 }
 
 function updateLikes(ele, num) {
-    var likeCountVal = ele.text() || 0; 
+    var likeCountVal = ele.text() || 0; // If element have no text then return 0
     ele.text(parseInt(likeCountVal) + parseInt(num));
 }
 

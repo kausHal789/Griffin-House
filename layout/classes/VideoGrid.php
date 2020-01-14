@@ -20,6 +20,7 @@ class VideoGrid {
             // no video pass select random
             $videoItem = $this->generateItems();
         } else {
+            // echo "hello";
             $videoItem = $this->generateItemsFromVideos($videos);
         }
 
@@ -66,6 +67,7 @@ class VideoGrid {
             unset($param['orderBy']);
             $newQuery = http_build_query($param);
             $newURL = basename($_SERVER['PHP_SELF']) . "?" . $newQuery;
+            // var_dump($newURL);
             $filter = "<div class='right'>
                     <span class=''>Order By:</span>
                     <a href='$newURL&order_by=time'>Time</a>

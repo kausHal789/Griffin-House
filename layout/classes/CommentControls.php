@@ -68,7 +68,6 @@ class CommentControls {
         $class = "likeButton";
         $action = "likeComment(this, $commentId, $videoId)";
         
-        // Button image change is already liked
         $btnPath = ($this->comment->wasLiked()) ? "assets/image/icon/thumb-up-active.png" : "assets/image/icon/thumb-up.png";
 
         return ButtonProvider::button($class, $action, $btnPath, "");
@@ -86,5 +85,7 @@ class CommentControls {
                 
         return ButtonProvider::button($class, $action, $btnPath, "");
     }
+
 }
+
 ?>

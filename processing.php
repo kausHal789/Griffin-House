@@ -6,7 +6,6 @@ if(! isset($_POST["uploadButton"])) {
     exit();
 }
 
-// create upload data
 $videoUploadData = new VideoUploadData(
                     $_FILES["file"], 
                     $_POST["title"], 
@@ -15,12 +14,12 @@ $videoUploadData = new VideoUploadData(
                     $_POST["privacyInput"], 
                     $user->getUsername());
 
-// process video data(upload)
-$videoProcessor = new VideoProcessor($cn);
+                    $videoProcessor = new VideoProcessor($cn);
 $wasSuccesful = $videoProcessor->upload($videoUploadData); // return bool
 
 // check video is uploaded
 if($wasSuccesful) {
     echo "<h3>Upload Successful</h3>";
 }
+
 ?>

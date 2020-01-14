@@ -85,6 +85,7 @@ class User {
 
     public function getJoinData() {
         return date("F jS Y", strtotime($this->sqlData['created_at']));
+        // return $this->sqlData['created_at'];
     }
 }
 ?>

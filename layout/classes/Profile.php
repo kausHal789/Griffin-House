@@ -1,5 +1,4 @@
 <?php
-
 class Profile {
 
     private $cn, $profileUsernameObj;
@@ -18,6 +17,7 @@ class Profile {
     }
 
     public function userExists() {
+        // $username = $this->getProfileUsername();
         $query = $this->cn->prepare("SELECT * FROM users WHERE username=:username");
         $query->bindParam(":username", $username);
         $username = $this->getProfileUsername();
@@ -43,6 +43,7 @@ class Profile {
     }
 
     public function getVideos() {
+        // $username = $this->getProfileUsername();
         $videos = array();
         $query = $this->cn->prepare("SELECT * FROM videos WHERE username=:username");
         $query->bindParam(":username", $username);
@@ -65,5 +66,8 @@ class Profile {
             'Joined Griffin House on' => $this->profileUsernameObj->getJoinData()
         );
     }
+
 }
+
+
 ?>

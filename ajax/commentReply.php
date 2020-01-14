@@ -10,6 +10,6 @@ $commentId = $_POST['commentId'];
 $user = new User($cn, $username);
 $comment = new Comment($cn, $commentId, $user, $videoId);
 
-echo $comment->getReplies();
+echo $comment->getReplies();  // return result
 
 ?>

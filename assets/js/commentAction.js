@@ -14,8 +14,10 @@ function postComment(btn, postBy, videoId, response, containerClass) {
             $.post("ajax/totalComments.php", {videoId: videoId})
             .done(function (totalComments) {
                 console.log(totalComments);
-                $('.totalComments').text(totalComments + ' Comments');
+                $('.totalComments').text(totalComments + 'Comments');
             });
+
+            // console.log(comment);
 
             if(!comment){
                 $("." + containerClass).prepend(comment);           

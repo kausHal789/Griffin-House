@@ -58,6 +58,7 @@ class ProfileProvider {
                 $subscribersButton
             </div>
         </div>";
+
     }
 
     public function tabSection() {
@@ -82,6 +83,7 @@ class ProfileProvider {
         } 
 
         $detailSection = $this->aboutSection();
+        
         return "<div class='tab-content channelContent' id='myTabContent'>
             <div class='tab-pane fade show active' id='videos' role='tabpanel' aria-labelledby='videos-tab'>
                 $videoGridHtml
@@ -121,5 +123,7 @@ class ProfileProvider {
         $html .= "</div></div>";
         return $html;
     }
+
 }
+
 ?>

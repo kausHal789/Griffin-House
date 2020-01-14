@@ -23,8 +23,11 @@ if(isset($_POST['commentText']) && $_POST['postBy'] && $_POST['videoId']) {
      
     $query->execute();
 
+    // echo $cn->lastInsertId();
     $newComment = new Comment($cn, $cn->lastInsertId(), $loggedInUser, $videoId);
     echo $newComment->create();
+} else {
+    echo "oop's";
 }
 
 ?>

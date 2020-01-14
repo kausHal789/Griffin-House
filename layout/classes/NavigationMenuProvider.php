@@ -56,5 +56,6 @@ class NavigationMenuProvider {
         }
         return $html;
     }
+
 }
 ?>

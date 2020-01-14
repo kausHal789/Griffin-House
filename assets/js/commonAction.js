@@ -5,8 +5,11 @@ $(document).ready(function() {
 
         if(main.hasClass("leftPadding")) {
             nav.hide();
+            // nav.slideUp(500);
+            
         } else {
             nav.show();
+            // nav.slideDown(500);
         }
         main.toggleClass("leftPadding");
     });
@@ -14,4 +17,5 @@ $(document).ready(function() {
 
 function notSignIn() {
     alert("Action denied, Please Sign In"); 
+    // window.location("signin.php");
 }
