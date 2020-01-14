@@ -24,5 +24,4 @@ class LikedVideoProvider {
         return $videos;
     }
 }
-
 ?>

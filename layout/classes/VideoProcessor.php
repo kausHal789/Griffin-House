@@ -14,12 +14,9 @@ class VideoProcessor {
 
     public function upload($videoUploadData) {
         $targetDir = "storage/public/videos/";
-        // echo "videoProcessor<br>";
         $videoData = $videoUploadData->videoData;
         $tmpFileName = $targetDir . uniqid() . basename($videoData["name"]);
         $tmpFileName = str_replace(" ", "", $tmpFileName);
-        // var_dump($videoData);
-        // die("okay");
         $isValidData = $this->processData($videoData, $tmpFileName);
 
         if(! $isValidData) {
@@ -52,7 +49,6 @@ class VideoProcessor {
                 return false;   
             }
             
-            // echo "Video is Succesfully uploaded";
             return true;
         } else {
             echo "Server problem please try again later";
@@ -62,7 +58,6 @@ class VideoProcessor {
 
     private function processData($videoData, $tmpFileName) {
         $videoType = pathinfo($tmpFileName, PATHINFO_EXTENSION);
-        // print_r($videoType);
 
         if(! $this->isValidSize($videoData)) {
             echo "Video too larage, Can't be more then " . $this->videoSizeLimit . " bytes";
@@ -142,13 +137,11 @@ class VideoProcessor {
     }
 
     private function generateThumbnails($filePath) {
-        // This $filePath is a finalUploadedPath
         $thumbnailSize = "210x118";
         $numThumbnail = 3;
         $oldThumbnailPath = "storage/public/videos/thumbnails";
 
         $videoDuration = $this->getVideoDuration($filePath);
-        // $videoDuration = (int)$videoDuration;
         $video_id = $this->cn->lastInsertId();
         if(! $this->updateDuration($videoDuration, $video_id)) {
             echo "not duration genetated\n";
@@ -197,8 +190,6 @@ class VideoProcessor {
     }
 
     private function updateDuration($duration, $video_id) {
-        // echo "This is duration\n";
-        // $duration = (int)$duration;
         $hour = floor($duration / 3600);
         $min = floor(($duration - ($hour*3600)) / 60);
         $sec = floor($duration % 60);

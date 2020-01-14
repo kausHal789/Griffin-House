@@ -10,5 +10,4 @@ $user = new User($cn, $username);
 $video = new Video($cn, $videoId, $user);
 
 echo $video->dislike();  // return result
-
 ?>

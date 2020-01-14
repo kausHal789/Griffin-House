@@ -31,7 +31,6 @@ class SelectThumbnail {
         while($row = $query->fetch(PDO::FETCH_ASSOC)) {
             $data[] = $row;
         }
-
         return $data;
     }
 
@@ -47,5 +46,4 @@ class SelectThumbnail {
     }
 
 }
-
 ?>

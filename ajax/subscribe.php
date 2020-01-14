@@ -45,5 +45,4 @@ if(isset($_POST['userTo']) && isset($_POST['userFrom'])) {
 } else {
     echo "This is Subscribe.php file you may make some mistack";
 }
-
 ?>

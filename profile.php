@@ -8,8 +8,6 @@ if(isset($_GET['user'])) {
     echo "404 Page not found";
     exit();
 }
-
-
 ?>
 
 <div id="mainContentContainer">

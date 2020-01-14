@@ -29,5 +29,4 @@ if(isset($_POST['commentText']) && $_POST['postBy'] && $_POST['videoId']) {
 } else {
     echo "oop's";
 }
-
 ?>

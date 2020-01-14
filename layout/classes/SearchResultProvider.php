@@ -25,5 +25,4 @@ class SearchResultProvider {
         return $videos;
     }
 }
-
 ?>

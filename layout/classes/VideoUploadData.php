@@ -10,9 +10,5 @@ class VideoUploadData {
         $this->privacy = $privacy;
         $this->username = $username;
     }
-
-    // public function getTitle() {
-    //     var_dump($this->videoData);
-    // }
 }
 ?>

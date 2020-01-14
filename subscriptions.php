@@ -3,7 +3,6 @@ require_once("./layout/header.php");
 
 if(! User::userLoggedIn()) {
     header("Location:signin.php");
-    
 }
 ?>
 

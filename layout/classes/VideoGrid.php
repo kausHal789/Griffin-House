@@ -90,5 +90,4 @@ class VideoGrid {
         return $this->create($videos, $title, $showFilter);
     }
 }
-
 ?>

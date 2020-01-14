@@ -21,5 +21,4 @@ class TrendingProvider {
         return $videos;
     }
 }
-
 ?>
